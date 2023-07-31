@@ -1,3 +1,5 @@
+// 자바스크립트 for문
+
 let persons = [
   { name: "철수", age: 17 },
   { name: "영희", age: 22 },
