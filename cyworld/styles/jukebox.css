@@ -73,37 +73,44 @@ html, body {
 
 .albumTable {
     width: 100%;
+    padding-top: 8px ;
+    border-spacing: 0px;
 }
 
-.albumTable__header {
-    display: flex;
-    flex-direction: row;
+.albumTable th {
+    height: 20px;
     font-size: 10px;
-    font-weight: 700;
-    color: #999999;
+    font-weight: bold;
+    color: gray;
     background-color: #eeeeee;
-    border-top: 1px solid #999999;
-    border-bottom: 1px solid #999999;
-    padding: 3px 0 3px 0;
+    padding-top: 5px;
+    border-top: 1px solid gray;
+    border-bottom: 1px dashed gray;
 }
 
-.input {
-    width: 12px;
-    height: 12px;
-    border: 1px solid #999999;
-}
-
-.albumTable__contents {
-    display: flex;
-    flex-direction: row;
+.albumTable td {
+    height: 20px;
     font-size: 10px;
-    font-weight: 400;
     color: #0f465e;
-    border-bottom: 1px dashed #999999;
-    padding: 3px 0 3px 0;
-    
+    border-bottom: 1px dashed grays;
 }
 
-.number {
-    color: black;
+.album-table-checkbox {
+    width: 5%;
+    text-align: center;
+}
+
+.album-table-number {
+    width: 10%;
+    text-align: center;
+}
+
+.album-table-song {
+    width: 45%;
+    text-align: center;
+}
+
+.album-table-artist {
+    width: 30%;
+    text-align: center;
 }
