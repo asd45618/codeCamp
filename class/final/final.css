@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper {
+    width: 540px;
+    height: 960px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #AACDFF;
+    border-radius: 20px;
+    box-shadow: 7px 7px 39px 0px #0068FF40;
+}
+
+.error {
+    color: red;
+    height: 10px;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.wrapper__title {
+    font-family: Noto Sans CJK KR;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0068FF;
+    margin: 60px 0px;
+}
+
+.wrapper__input {
+    width: 380px;
+    height: 60px;
+    border-radius: 7px;
+    border: 1px solid #d2d2d2;
+    
+}
+
+.phoneNum {
+    width: 380px;
+    height: 40px;
+}
+
+.phone-number {
+    width: 100px;
+    height: 100%;
+    border: 1px solid #d2d2d2;
+    border-radius: 7px;
+    margin-right: 10px;
+}
+
+#num2 {
+    margin-left: 10px;
+}
+
+#num3 {
+    margin-right: 0px;
+    margin-left: 10px;
+}
+
+.certification {
+    width: 380px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.certiNum {
+    font-size: 18px;
+    color: #0068ff;
+    margin-right: 21px;
+}
+
+.certiBtn {
+    width: 120px;
+    height: 40px;
+    border: 1px solid #d2d2d2;
+    border-radius: 7px;
+    font-size: 16px;
+    color: #0068ff;
+    background-color: white;
+}   
+
+.complete {
+    width: 380px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.timer {
+    width: 35px;
+    height: 27px;
+    font-size: 18px;
+    color: #0068ff;
+    margin-right: 21px;
+}
+
+.certiComplete {
+    width: 120px;
+    height: 40px;
+    border: 1px solid #0068ff;
+    border-radius: 7px;
+    color: white;
+    background-color: #0068ff;
+}
+
+.selectBox {
+    width: 380px;
+    height: 60px;
+    margin: 20px 0px 10px 0px;
+    border: 1px solid #d2d2d2;
+    border-radius: 7px;
+    color: #797979;
+    font-size: 16px;
+}
+
+.radioBtn {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.radioFemale {
+    margin-right: 10px;
+}
+
+.female {
+    font-size: 16px;
+}   
+
+.male {
+    font-size: 16px;
+}
+
+.divideLine {
+    width: 380px;
+    border-bottom: 1px solid #e6e6e6;
+    margin: 30px 0px 20px 0px;
+}
+
+.registerBtn {
+    width: 380px;
+    height: 75px;
+    border: 1px solid #0068ff;
+    border-radius: 10px;
+    background-color: white;
+    color: #0068ff;
+    cursor: pointer;
+}

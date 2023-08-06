@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Sing Up</title>
+    <link rel="stylesheet" href="./final.css" />
+    <script src="./final.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__title">코드캠프 회원가입</div>
+      <div>
+        <input
+          id="input__email"
+          class="wrapper__input"
+          placeholder="이메일을 입력해 주세요."
+        />
+        <div class="error" id="error__email"></div>
+      </div>
+      <div>
+        <input
+          id="input__name"
+          class="wrapper__input"
+          placeholder="이름을 입력해 주세요."
+        />
+        <div class="error" id="error__name"></div>
+      </div>
+      <div>
+        <input
+          id="input__password1"
+          class="wrapper__input"
+          placeholder="비밀번호를 입력해 주세요."
+        />
+        <div class="error" id="error__password1"></div>
+      </div>
+      <div>
+        <input
+          id="input__password2"
+          class="wrapper__input"
+          placeholder="비밀번호를 다시 입력해 주세요."
+        />
+        <div class="error" id="error__password2"></div>
+      </div>
+      <div class="phoneNum">
+        <input
+          id="num1"
+          class="phone-number"
+          oninput="changeFocus1()"
+          maxlength="3"
+        />
+        -
+        <input
+          id="num2"
+          class="phone-number"
+          oninput="changeFocus2()"
+          maxlength="4"
+        />
+        -
+        <input
+          id="num3"
+          class="phone-number"
+          oninput="changeFocus3()"
+          maxlength="4"
+        />
+      </div>
+      <div class="certification">
+        <span id="certiNum" class="certiNum">000000</span>
+        <button
+          id="sendBtn"
+          class="certiBtn"
+          onclick="sendCertification()"
+          disabled
+        >
+          인증번호 전송
+        </button>
+      </div>
+      <div class="complete">
+        <span id="timer" class="timer">3:00</span>
+        <button
+          id="checkBtn"
+          class="certiComplete"
+          onclick="authenticationCompleted()"
+          disabled="true"
+        >
+          인증 확인
+        </button>
+      </div>
+      <div>
+        <select class="selectBox" id="location">
+          <option>지역을 선택하세요.</option>
+          <option>서울</option>
+          <option>경기</option>
+          <option>인천</option>
+        </select>
+      </div>
+      <div class="error" id="error__location"></div>
+      <div class="radioBtn">
+        <div class="radioFemale">
+          <input type="radio" name="gender" class="female" id="female" />여성
+        </div>
+
+        <div>
+          <input type="radio" name="gender" class="male" id="male" />남성
+        </div>
+      </div>
+      <div class="error" id="error__gender"></div>
+      <div class="divideLine"></div>
+      <button class="registerBtn" onclick="signUp()">가입하기</button>
+    </div>
+  </body>
+</html>
